@@ -1,0 +1,88 @@
+body{
+    background-color: #131316;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+    padding: 30px;
+}
+
+.apresentação{
+    margin: 180px 50px;
+    display: inline-block;
+    font-size: 25px;
+}   
+
+.apresentação h1{
+    font-weight: bold;
+}
+
+.apresentação p {
+    font-size: 23px;
+    color: wheat;
+    margin-bottom: 1em;
+}
+
+.foto{
+    border-radius: 50%;
+    width: 15%;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.foto:hover{
+    opacity: 0.7;
+    transition: 400ms;
+}
+
+li {
+    color: white;
+    font-weight: bold;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    overflow: hidden;
+    transition: 0.5;
+    width: 100%;
+    text-align: right;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+
+}
+
+nav a:hover{
+    font-size: 40px;
+    transition: 400ms;
+}
+
+nav li {
+    color: white;
+    font-size: 32px;
+    list-style: none;
+    display: inline-flex;
+    margin: 0 0 0 60px;
+}
+
+footer{
+    background: grey ;
+    text-align: center;
+    padding: 70px;
+}
+
+.copyright{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin: 20px 0;
+}
