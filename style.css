@@ -142,15 +142,7 @@ p {
 .show{
     opacity: 1;
     transform: translateX(0);
-    width: 1000px;
-    margin: auto auto;
-    font-size: 25px;
-    place-items: center;
-    align-content: center;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
 }
 
 .conhecimentos h1{
@@ -171,16 +163,21 @@ p {
 
 }
 
-.projetos{
-    font-size: 25px;
-    width: 1000px;
-    margin: auto auto;
-    padding-top: 2em;
-}
 
 .projetos{
     height: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.projetos{
+    width: 1000px;
+    margin: auto auto;
+    place-items: center;
+    align-content: center;
+    height: 100%;
     align-items: center;
     justify-content: center;
 }
