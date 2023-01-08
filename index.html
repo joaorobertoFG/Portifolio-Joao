@@ -9,13 +9,15 @@
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">      
         
         <link rel="icon" type="image/png" href="heart.png">
+        
+        <script defer src="app.js"></script>
     </head>
 
     <body>
         <header>
             <div class="menu">
                 <nav>
-                    <ul>
+                    <ul id="menu">
                         <li><a href="#nav_apresentação">Sobre</a></li>
                         <li><a href="#nav_conhecimentos">Conhecimentos</a></li>
                         <li><a href="#nav_projetos">Projetos</a></li>
@@ -24,7 +26,6 @@
                 </nav>
             </div>  
         </header>
-
         
         <main>
             <section id="nav_apresentação">
@@ -53,9 +54,12 @@
                 </div>
             </section>
 
-            <section id="nav_conhecimentos">
-                <div class="conhecimentos">
-                    <h1>Conhecimentos</h1>
+            <section id="nav_conhecimentos"  class="conhecimentos">
+                
+                <h1>Conhecimentos _</h1>
+
+                <div class="hidden">
+                    
                     <img class= conhecimentos_icons src="html5_icon.png" alt="html5">
                     <img class= conhecimentos_icons src="css_icon.png" alt="css">
                     <img class= conhecimentos_icons src="javascript_icon.png" alt="javascript">
@@ -63,27 +67,49 @@
                     <img class= conhecimentos_icons src="git_icon.png" alt="git">
                     <img class= conhecimentos_icons src="linux_icon.png" alt="linux">
                 </div>  
+                
             </section>
 
-            <section id="nav_projetos">   
-                <div class="projetos">
-                    <h1>Projetos</h1>
-                    <ul class="projetos_lista">
-                        <li>
-                            <a href="https://editor.p5js.org/joao.robertofg/full/7gN_ZELm4" target="_blank"><img class =linkway src="linkway.gif" alt=""></a>
-                            <p>LinkWay</p>
-                            <p>Recriação do clássico Freeway do Atari (1981), com características de The Legend of Zelda.</p>
-                            <img class="wasd" src="wasd.png" alt="">
-                        </li>
-                    </ul>
+            <section id="nav_projetos"> 
+                <h1>Projetos _</h1>  
+
+                <div class="hidden">
+
+                    <article class="card">
+                        <div class="flip">
+                            <section class="front-card">
+                                <img src="linkway.gif" alt="">
+                            </section>
+
+                            <section class="back-card">
+                                <img src="linkway_back.png" alt="">
+                            </section>
+                        </div>  
+                    </article>
+
+                    <article class="card">
+                        <div class="flip">
+                            <section class="front-card">
+                                <img src="card_teste.png" alt="">
+                            </section>
+
+                            <section class="back-card">
+                                <img src="card_teste_back.png" alt="">
+                            </section>
+                        </div>  
+                    </article>
+                    
                 </div>
+
             </section>
 
             <section id="nav_certificados">
-                <h1>Certificados</h1>
+                <h1>Certificados _</h1>
                 <a href="https://cursos.alura.com.br/vitrinedev/joao-robertofg" target="_blank"><img class=vitrine src="vitrinedev.png"></a>
             </section>
         </main>
+
+        <a href="#" class="top">Top</a>
 
         <footer>
             <p class="copyright">&copy;João Roberto</p>

@@ -1,33 +1,55 @@
 body{
-    background-color: #131316;
-    font-family: 'Montserrat', sans-serif;
+    background-color: #18181a;
+    font-family: 'Montserrat', sans-serif;   
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 li {
     color: white;
     font-weight: bold;
+    position: relative;
+}
+
+li::before{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: blueviolet;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 400ms;
+}
+
+li:hover::before, li.active::before{
+    transform: translateX(0);
+    opacity: 1;
 }
 
 nav {
     position: fixed;
     top: 0;
     right: 0;
-    display: inline-block;
-    overflow: hidden;
-    transition: 0.5;
     width: 100%;
     text-align: center;
     padding: 30px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(60px);
+    z-index: 100000;
 }
 
 nav a {
     text-decoration: none;
     color: white;
+    transition: 700ms;
 }
 
 nav a:hover{
-    font-size: 40px;
+    font-size: 35px;
     transition: 400ms;
     color: blueviolet;
 }
@@ -46,12 +68,12 @@ h1 {
 
 .apresentação{
     font-size: 25px;
-    width: 1100px;
+    width: 1000px;
     margin: auto auto;
-    padding-top: 8em;
+    padding-top: 10em;
 }   
 
-.apresentação h1{
+h1{
     font-weight: bold;
     color: white;
     font-size: 40px;
@@ -80,6 +102,7 @@ p {
     width: 4%;
     border-radius: 50%;
     margin:0px 20px 60px 0px ;
+    transition: 400ms;
 }
 
 .icons:hover{
@@ -99,11 +122,35 @@ p {
 #dados:hover{
     color: white;
 }
+
 .conhecimentos{
-    font-size: 25px;
-    width: 1100px;
+    width: 1000px;
     margin: auto auto;
-    padding-top: 8em;
+    font-size: 25px;
+    padding-top: 10em;
+    place-items: center;
+    align-content: center;
+}
+
+.hidden{
+    opacity: 0;
+    transition: all 2s;
+    transform: translateX(-100%);
+
+}
+
+.show{
+    opacity: 1;
+    transform: translateX(0);
+    width: 1000px;
+    margin: auto auto;
+    font-size: 25px;
+    place-items: center;
+    align-content: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .conhecimentos h1{
@@ -115,60 +162,75 @@ p {
 .conhecimentos_icons{
     width: 8%;
     padding: 30px 40px;
+    padding-top: 3em;
+
 }
 
 .conhecimentos_icons:hover{
-    opacity: 0.7;
+    opacity: 0.5;
+
 }
 
 .projetos{
     font-size: 25px;
-    width: 1100px;
+    width: 1000px;
     margin: auto auto;
-    padding-top: 8em;
+    padding-top: 2em;
 }
 
-.projetos h1{
+.projetos{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav_projetos h1{
     color: white;
     font-weight: bold;
     font-size: 40px;
+    width: 1000px;
+    margin: auto auto;
+    padding-top: 2em;
 }
 
-.projetos_lista p:nth-child(3){
-    color: white;
-    font-size: 18px;
-    opacity: 0.7;
-    font-style: italic;
+.card{
+    padding-top: 3em;
+    position: relative;
+    margin: 5px;
+    height: 377px;
+    width: 480px;
+    perspective: 1000px;
 }
 
-.projetos_lista{
-    text-align: center;
-    width: 43.5%;
-    padding: 5px;
-    box-sizing:content-box;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 8px;
+.card .flip{
+    transition: 0.5s;
+    transform-style: preserve-3d;
 }
 
-.projetos_lista:hover{
-    border-color: blueviolet;
-    transition: 400ms;
+.card:hover .flip{
+    transform: rotateY(180deg);
 }
 
-.projetos_lista:hover p:nth-child(2){
-    font-size: 40px;
-    transition: 400ms;
+.front-card, .back-card{
+    position: absolute;
+    backface-visibility: hidden;
 }
 
-.wasd{
-    width: 20%;
+.back-card{
+    transform: rotateY(180deg);
+}
+
+.front-card img, .back-card img{
+    border-radius: 10px;
+    box-shadow: 0 0 8px 0 black;
 }
 
 #nav_certificados{
     font-size: 25px;
-    width: 1100px;
+    width: 1000px;
     margin: auto auto;
-    padding-top: 8em;
+    padding-top: 5em;
     text-align: center;
 }
 
@@ -181,7 +243,8 @@ p {
 
 .vitrine{
     width: 27%;
-    margin-top: 3em;
+    margin-top: 2em;
+    transition: 400ms;
 }
 
 .vitrine:hover{
@@ -209,4 +272,22 @@ footer{
 .icon_footer{
     width: 2.5%;
     border-radius: 50%;
+}
+
+.top{
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 10px 0 black;
 }
