@@ -163,23 +163,14 @@ p {
 
 }
 
-
 .projetos{
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-}
-
-.projetos{
     width: 1000px;
     margin: auto auto;
-    place-items: center;
-    align-content: center;
     height: 100%;
-    align-items: center;
-    justify-content: center;
 }
 
 #nav_projetos h1{
@@ -192,7 +183,6 @@ p {
 }
 
 .card{
-    padding-top: 3em;
     position: relative;
     margin: 5px;
     height: 377px;
