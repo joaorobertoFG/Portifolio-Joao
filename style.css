@@ -190,6 +190,11 @@ p {
     perspective: 1000px;
 }
 
+.pong {
+    height: 377px;
+    width: 480px;
+}
+
 .card .flip{
     transition: 0.5s;
     transform-style: preserve-3d;
