@@ -7,6 +7,7 @@ html{
     scroll-behavior: smooth;
 }
 
+/* Nav bar */
 li {
     color: white;
     font-weight: bold;
@@ -62,6 +63,7 @@ nav li {
     margin: 0 0 0 60px;
 }
 
+/* Apresentação */
 h1 {
     padding-bottom: 35px;
 }
@@ -123,6 +125,7 @@ p {
     color: white;
 }
 
+/* Conhecimentos */
 .conhecimentos{
     width: 1000px;
     margin: auto auto;
@@ -137,6 +140,12 @@ p {
     transition: all 2s;
     transform: translateX(-100%);
 
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
 }
 
 .show{
@@ -163,6 +172,7 @@ p {
 
 }
 
+/* Projetos */
 .projetos{
     height: 100%;
     display: flex;
@@ -171,6 +181,7 @@ p {
     width: 1000px;
     margin: auto auto;
     height: 100%;
+    
 }
 
 #nav_projetos h1{
@@ -218,6 +229,7 @@ p {
     box-shadow: 0 0 8px 0 black;
 }
 
+/* Certificados */
 #nav_certificados{
     font-size: 25px;
     width: 1000px;
@@ -245,8 +257,9 @@ p {
 
 }
 
+/* Rodapé */
 footer{
-    background: grey ;
+    background: black ;
     text-align: center;
     padding-top: 3em;
     padding-bottom: 2em;
@@ -258,7 +271,7 @@ footer{
 .copyright{
     font-size: 20px;
     font-weight: bold;
-    color: black;
+    color: wheat;
 }
 
 .icon_footer{
