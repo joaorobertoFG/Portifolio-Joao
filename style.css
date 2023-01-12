@@ -136,13 +136,14 @@ p {
 }
 
 /* Conhecimentos */
+
 .conhecimentos{
     width: 1000px;
     margin: auto auto;
     font-size: 25px;
     place-items: center;
     align-content: center;
-    margin-top: 5em;
+    padding-top: 5em;
 }
 
 .hidden{
