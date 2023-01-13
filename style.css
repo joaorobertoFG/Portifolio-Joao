@@ -78,8 +78,7 @@ h2{
     background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent; 
-                
+    -webkit-text-fill-color: transparent;            
     font-size: 40px;
     text-align: left;
     padding-left: 10px;
@@ -94,6 +93,7 @@ h1{
     border-left: 5px solid purple;
     padding-left: 10px;
     margin-bottom: 25px;
+    margin-top: 50px;
 }
 
 p {
@@ -147,7 +147,7 @@ p {
     font-size: 25px;
     place-items: center;
     align-content: center;
-    padding-top: 5em;
+    padding-top: 3em;
 }
 
 .hidden{
@@ -183,24 +183,13 @@ p {
 
 /* Projetos */
 .projetos{
-    height: 100%;
-    display:flex;
-    align-items: center;
-    justify-content: center;
+    display: flex;
     width: 1000px;
     margin: auto auto;
-    height: 100%;
-    margin-top: 5em;
-    
-}
-
-.projetos h1{
-    color: white;
-    font-weight: bold;
-    font-size: 40px;
-    width: 1000px;
-    margin: auto auto;
-    margin-top: 2em;
+    font-size: 25px;
+    place-items: center;
+    align-content: center;
+    padding-top: 2em;
 }
 
 .card{
@@ -244,7 +233,7 @@ p {
     font-size: 25px;
     width: 1000px;
     margin: auto auto;
-    padding-top: 5em;
+    padding-top: 2em;
     text-align: center;
     
 }
@@ -299,7 +288,7 @@ footer{
     align-items: center;
     justify-content: center;
     box-shadow: 0 5px 10px 0 black;
-    font-size: 40px;
+    font-size: 20px;
     
 }
 
@@ -312,8 +301,12 @@ footer{
         width: 300px;
     }
 
-    h1, h2 {
+    h1 {
         font-size: 60px;
+    }
+
+    h2 {
+        font-size: 70px;
     }
 
     p {
@@ -334,13 +327,21 @@ footer{
 
     footer {
         width: 1050px;
-        height: 100px;
+        height: 150px;
+    }
+
+    .copyright {
+        font-size: 40px;
+    }
+
+    .icon_footer {
+        width: 8%;
     }
 
     .top {
         width: 200px;
         height: 200px;
         border-radius: 50%;
-        font-size: 150px;
+        font-size: 80px;
     }
 }
