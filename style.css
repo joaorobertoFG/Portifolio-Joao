@@ -299,18 +299,23 @@ footer{
 
     .foto {
         width: 300px;
+        float: right;
     }
 
     h1 {
-        font-size: 60px;
+        font-size: 80px;
     }
 
     h2 {
-        font-size: 70px;
+        font-size: 85px;
     }
 
     p {
-        font-size: 50px;
+        font-size: 55px;
+    }
+
+    .apresentação {
+        padding-bottom: 100px;
     }
 
     .icons {
@@ -318,7 +323,7 @@ footer{
     }
 
     #dados {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .vitrine {
@@ -343,5 +348,9 @@ footer{
         height: 150px;
         border-radius: 50%;
         font-size: 60px;
+    }
+
+    nav {
+        display: none;
     }
 }
