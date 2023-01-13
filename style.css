@@ -194,7 +194,7 @@ p {
     
 }
 
-#nav_projetos h1{
+.projetos h1{
     color: white;
     font-weight: bold;
     font-size: 40px;
@@ -247,13 +247,6 @@ p {
     padding-top: 5em;
     text-align: center;
     
-}
-
-#nav_certificados h1{
-    color: white;
-    font-weight: bold;
-    font-size: 40px;
-    text-align: left;
 }
 
 .vitrine{
@@ -315,7 +308,39 @@ footer{
         padding-left: 2em;
     }
 
+    .foto {
+        width: 300px;
+    }
+
+    h1, h2 {
+        font-size: 60px;
+    }
+
+    p {
+        font-size: 50px;
+    }
+
+    .icons {
+        width: 80px;
+    }
+
+    #dados {
+        font-size: 30px;
+    }
+
+    .vitrine {
+        width: 50%;
+    }
+
     footer {
-        width: 1000px;
+        width: 1050px;
+        height: 100px;
+    }
+
+    .top {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        font-size: 150px;
     }
 }
