@@ -96,6 +96,13 @@ h1{
     margin-top: 50px;
 }
 
+.ap {
+    margin-top: 2em;
+    opacity: 0;
+    transition: all 1s;
+    transform: translateY(-50%);
+}
+
 p {
     font-size: 23px;
     color: wheat;
@@ -153,8 +160,7 @@ p {
 .hidden{
     opacity: 0;
     transition: all 2s;
-    transform: translateX(-100%);
-
+    transform: translateX(-50%);
 }
 
 @media(prefers-reduced-motion) {
@@ -170,9 +176,8 @@ p {
 }
 
 .conhecimentos_icons{
-    width: 8%;
+    width: 80px;
     padding: 30px 40px;
-    padding-top: 3em;
     transition: 400ms;
 
 }
@@ -196,7 +201,7 @@ p {
 }
 
 .card{
-    position: relative;
+
     margin: 5px;
     height: 377px;
     width: 480px;
