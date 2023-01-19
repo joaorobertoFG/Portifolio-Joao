@@ -1,10 +1,12 @@
 body{
     background-color: #101011;
-    font-family: 'Montserrat', sans-serif;   
+    font-family: 'Montserrat', sans-serif;
 }
 
 html{
     scroll-behavior: smooth;
+    /* scroll-snap-type: y mandatory;
+    overflow-x: scroll; */
 }
 
 /* Nav bar */
@@ -66,6 +68,7 @@ nav li {
 /* Apresentação */
 
 .apresentação{
+    scroll-snap-align: start;
     font-size: 25px;
     width: 1000px;
     margin: auto auto;
@@ -148,14 +151,13 @@ p {
 /* Conhecimentos */
 
 .conhecimentos{
+    scroll-snap-align: start;
     min-height: 100vh;
     margin: auto auto;
     font-size: 25px;
     display: flex;
     flex-direction: column;
-    -webkit-box-align: center;
     align-items: center;
-    -webkit-box-pack: center;
     justify-content: center;
 }
 
@@ -196,6 +198,7 @@ p {
 
 /* Projetos */
 .projetos{
+    scroll-snap-align: start;
     min-height: 100vh;
     margin: auto auto;
     font-size: 25px;
@@ -242,6 +245,7 @@ p {
 
 /* Certificados */
 #nav_certificados{
+    scroll-snap-align: start;
     font-size: 25px;
     min-height: 50vh;
     width: 1000px;
@@ -297,7 +301,7 @@ footer{
     width: 50px;
     height: 50px;
     border-radius: 50px;
-    background-color: rgb(132, 0, 255);
+    background-color: rgb(225, 217, 233);
     text-decoration: none;
     font-weight: bold;
     color: rgb(0, 0, 0, 0.7);
@@ -344,8 +348,50 @@ footer{
         font-size: 35px;
     }
 
+    .hidden {
+        display: block;
+    }
+
+    .conhecimentos {
+        width: 1000px;
+        min-height: 200vh;
+        margin: auto auto;
+        font-size: 25px;
+        place-items: center;
+        align-content: center;
+        padding-top: 3em;
+    }
+
+    .projetos {
+        width: 1000px;
+        min-height: 250vh;
+        margin: auto auto;
+        font-size: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #nav_certificados{
+        width: 1000px;
+        font-size: 25px;
+        min-height: 200vh;
+        width: 1000px;
+        margin: auto auto;
+        padding-top: 2em;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
     .vitrine {
-        width: 50%;
+        margin-top: 5em;
+        margin-bottom: 5em;
+        transition: 400ms;
     }
 
     footer {
@@ -362,13 +408,11 @@ footer{
     }
 
     .top {
+        display: flex;
         width: 120px;
         height: 120px;
         border-radius: 50%;
         font-size: 40px;
     }
 
-    nav {
-        display: none;
-    }
 }
