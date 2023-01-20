@@ -11,3 +11,12 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden, .ap');
 hiddenElements.forEach((el) => observer.observe(el));
+
+//menu lateral
+
+const botaoMenu = document.querySelector('.cabecalho-menu')
+const menu = document.querySelector(".menu-lateral")
+
+botaoMenu.addEventListener('click', () => {
+    menu.classList.toggle('menu-lateral-ativo')
+})

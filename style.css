@@ -1,6 +1,11 @@
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+
 body{
     background-color: #101011;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', 'icones', sans-serif;
 }
 
 html{
@@ -63,6 +68,66 @@ nav li {
     list-style: none;
     display: inline-flex;
     margin: 0 0 0 120px;
+}
+
+.menu-lateral, .img-lateral, .cabecalho{
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .menu {
+        display: none;
+    }
+
+    .cabecalho {
+        position: fixed;
+        display: flex;
+        width: 1000px;
+        padding: 15px 25px;
+        box-shadow: 0px 4px 4px black;
+        justify-content: flex-start;
+        background: #101011;
+        z-index: 100000;
+    }
+
+    .img-lateral {
+        display: block;
+        width: 120px;
+    }
+
+    button {
+    border: none;
+    background-color: unset;
+    }
+
+    .menu-lateral {
+        display: flex;
+        flex-direction: column;
+        background-color: #111314;
+        width: 170vw;
+        height: 100%;
+        position: fixed;
+        transition: 400ms;
+        align-items: flex-start;
+        left: -200vh;
+        box-shadow: 10px 4px 4px black;
+    }
+
+    .menu-lateral-ativo {
+        left: 0;
+        transition: 400ms;
+    }
+
+    .menu-link {
+        margin-top: 200px;
+        font-size: 75px;
+        height: 10vh;
+        color: #feffff;
+        padding-left: 64px;
+        display: flex;
+        align-items: center;
+    }
+
 }
 
 /* Apresentação */
@@ -337,6 +402,7 @@ footer{
     }
 
     .apresentação {
+        padding-top: 250px;
         padding-bottom: 100px;
     }
 
@@ -408,7 +474,7 @@ footer{
     }
 
     .top {
-        display: flex;
+        display: none;
         width: 120px;
         height: 120px;
         border-radius: 50%;
