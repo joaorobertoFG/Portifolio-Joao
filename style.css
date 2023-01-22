@@ -121,6 +121,7 @@ nav li {
     .menu-link {
         margin-top: 200px;
         font-size: 75px;
+        font-weight: bold;
         height: 10vh;
         color: #feffff;
         padding-left: 64px;
@@ -359,26 +360,6 @@ footer{
     border-radius: 50%;
 }
 
-.top{
-    position: fixed;
-    right: 30px;
-    bottom: 50px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    background-color: rgb(225, 217, 233);
-    text-decoration: none;
-    font-weight: bold;
-    color: rgb(0, 0, 0, 0.7);
-    text-transform: uppercase;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 5px 10px 0 black;
-    font-size: 20px;
-    
-}
-
 @media screen and (max-width: 480px) {
     main {
         padding-left: 2em;
@@ -458,6 +439,7 @@ footer{
         margin-top: 5em;
         margin-bottom: 5em;
         transition: 400ms;
+        width: 500px;
     }
 
     footer {
@@ -474,7 +456,7 @@ footer{
     }
 
     .top {
-        display: none;
+        display: flex;
         width: 120px;
         height: 120px;
         border-radius: 50%;

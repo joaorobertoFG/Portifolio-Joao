@@ -10,7 +10,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 
-const hiddenElements = document.querySelectorAll('.hidden, .ap');
+const hiddenElements = document.querySelectorAll('.hidden, .ap, .top-b');
 hiddenElements.forEach((el) => observer.observe(el));
 
 //menu lateral
