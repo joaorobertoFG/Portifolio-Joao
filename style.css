@@ -165,7 +165,7 @@ h1{
 }
 
 .ap {
-    margin-top: 2em;
+    margin-top: 3em;
     opacity: 0;
     transition: all 1s;
     transform: translateY(-50%);
@@ -189,6 +189,65 @@ p {
     transition: 400ms;
 }
 
+.social {
+    display: flex;
+    gap: 25px;
+}
+
+#botao-linkedin {
+    align-items: center;
+    background: none;
+    border: 1px solid #006eff;
+    border-radius: 10px;
+    color: #0084ff;
+    cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 600;
+    gap: 1rem;
+    justify-content: center;
+    padding: 0.5rem 0.8rem;
+    text-decoration: none;
+    transition: 400ms;
+    width: 200px;
+    height: 35px;
+}
+
+#botao-linkedin:hover {
+    transform: scale(1.1);
+}
+
+.linkedin {
+    width: 21px;
+}
+
+.github {
+    width: 21px;
+}
+
+#botao-github {
+    align-items: center;
+    background: none;
+    border: 1px solid #006eff;
+    border-radius: 10px;
+    color: #0084ff;
+    cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 600;
+    gap: 1rem;
+    justify-content: center;
+    padding: 0.5rem 0.8rem;
+    text-decoration: none;
+    transition: 400ms;
+    width: 200px;
+    height: 35px;
+}
+
+#botao-github:hover {
+    transform: scale(1.1);
+}
+
 .icons{
     width: 4%;
     border-radius: 50%;
@@ -201,17 +260,26 @@ p {
     transition: 400ms
 }
 
+.icons:nth-child(3) {
+    display: none;
+}
+
 .icons:hover:after{
     transition: 400ms;
 }    
 
-#dados{
+.dados p, a{
+    text-decoration: none;
     font-size: 20px;
     color: rgb(192, 192, 192);
 }
 
-#dados:hover{
+.dados p:hover{
     color: white;
+}
+
+.dados p:nth-child(3)::before {
+    content: url("icone-gps.png");
 }
 
 /* Conhecimentos */
@@ -387,12 +455,24 @@ footer{
         padding-bottom: 100px;
     }
 
-    .icons {
-        width: 80px;
+    .dados p {
+        font-size: 40px;
     }
 
-    #dados {
-        font-size: 35px;
+    #botao-linkedin {
+        width: 280px;
+        height: 80px;
+        font-size: 40px;
+    }
+
+    #botao-github {
+        width: 280px;
+        height: 80px;
+        font-size: 40px;
+    }
+
+    .ap {
+        padding-top: 3em;
     }
 
     .hidden {
@@ -453,14 +533,6 @@ footer{
 
     .icon_footer {
         width: 8%;
-    }
-
-    .top {
-        display: flex;
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        font-size: 40px;
     }
 
 }
