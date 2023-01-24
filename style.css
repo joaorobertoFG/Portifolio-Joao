@@ -10,8 +10,7 @@ body{
 
 html{
     scroll-behavior: smooth;
-    /* scroll-snap-type: y mandatory;
-    overflow-x: scroll; */
+    scroll-snap-type: y mandatory;
 }
 
 /* Nav bar */
@@ -197,9 +196,10 @@ p {
 #botao-linkedin {
     align-items: center;
     background: none;
-    border: 1px solid #006eff;
-    border-radius: 10px;
-    color: #0084ff;
+    border: 2px solid transparent;
+    border-image: linear-gradient(100deg, red, purple);
+    border-image-slice: 1;
+    color: #0077b7;
     cursor: pointer;
     display: flex;
     font-size: 1rem;
@@ -211,26 +211,29 @@ p {
     transition: 400ms;
     width: 200px;
     height: 35px;
+    transition: 500ms;
+    
 }
 
 #botao-linkedin:hover {
     transform: scale(1.1);
+    border-image: linear-gradient(240deg, red, purple);
+    border-image-slice: 1;
+    transition: 500ms;
+    box-shadow: 0 15px 25px rgb(0, 0, 0);
 }
 
-.linkedin {
-    width: 21px;
-}
-
-.github {
+.social-icons {
     width: 21px;
 }
 
 #botao-github {
     align-items: center;
     background: none;
-    border: 1px solid #006eff;
-    border-radius: 10px;
-    color: #0084ff;
+    border: 2px solid transparent;
+    border-image: linear-gradient(100deg, red, purple);
+    border-image-slice: 1;
+    color: #5c6bc0;
     cursor: pointer;
     display: flex;
     font-size: 1rem;
@@ -242,10 +245,16 @@ p {
     transition: 400ms;
     width: 200px;
     height: 35px;
+    transition: 500ms;
 }
 
 #botao-github:hover {
     transform: scale(1.1);
+    transform: scale(1.1);
+    border-image: linear-gradient(240deg, red, purple);
+    border-image-slice: 1;
+    transition: 500ms;
+    box-shadow: 0 15px 25px rgb(0, 0, 0);
 }
 
 .icons{
@@ -414,7 +423,6 @@ footer{
     padding-bottom: 2em;
     margin-top: 4em;
     width: 100%;
-
 }
 
 .copyright{
@@ -463,6 +471,10 @@ footer{
         width: 280px;
         height: 80px;
         font-size: 40px;
+    }
+
+    .social-icons {
+        width: 50px;
     }
 
     #botao-github {
