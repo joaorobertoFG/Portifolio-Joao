@@ -197,7 +197,7 @@ p {
     align-items: center;
     background: none;
     border: 2px solid transparent;
-    border-image: linear-gradient(100deg, red, purple);
+    border-image: linear-gradient(100deg, red, blueviolet, purple);
     border-image-slice: 1;
     color: #0077b7;
     cursor: pointer;
@@ -208,18 +208,15 @@ p {
     justify-content: center;
     padding: 0.5rem 0.8rem;
     text-decoration: none;
-    transition: 400ms;
     width: 200px;
     height: 35px;
-    transition: 500ms;
-    
+    transition: all 500ms;
 }
 
 #botao-linkedin:hover {
     transform: scale(1.1);
-    border-image: linear-gradient(240deg, red, purple);
+    border-image: linear-gradient(200deg, red, blueviolet, purple);
     border-image-slice: 1;
-    transition: 500ms;
     box-shadow: 0 15px 25px rgb(0, 0, 0);
 }
 
@@ -231,7 +228,7 @@ p {
     align-items: center;
     background: none;
     border: 2px solid transparent;
-    border-image: linear-gradient(100deg, red, purple);
+    border-image: linear-gradient(100deg, red, blueviolet, purple);
     border-image-slice: 1;
     color: #5c6bc0;
     cursor: pointer;
@@ -251,7 +248,7 @@ p {
 #botao-github:hover {
     transform: scale(1.1);
     transform: scale(1.1);
-    border-image: linear-gradient(240deg, red, purple);
+    border-image: linear-gradient(200deg, red, blueviolet, purple);
     border-image-slice: 1;
     transition: 500ms;
     box-shadow: 0 15px 25px rgb(0, 0, 0);
@@ -302,6 +299,15 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.hidden-conhecimentos{
+    opacity: 0;
+    transition: all 2s;
+    transform: translateX(-50%);
+    display: flex;
+    margin-top: 4em;
+    margin-bottom: 5em;
 }
 
 .hidden{
@@ -355,7 +361,7 @@ p {
     margin: 5px;
     height: 377px;
     width: 480px;
-    perspective: 1000px;
+    perspective: 8000px;
 }
 
 .pong {
@@ -448,6 +454,8 @@ footer{
 
     h1 {
         font-size: 80px;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
 
     h2 {
@@ -487,13 +495,30 @@ footer{
         padding-top: 3em;
     }
 
+    .hidden-conhecimentos {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 14.5rem;
+        row-gap: 8rem;
+    }
+
+    .conhecimentos_icons {
+        width: 150px;
+    }
+
     .hidden {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 16em;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     .conhecimentos {
         width: 1000px;
-        min-height: 200vh;
+        min-height: 250vh;
         margin: auto auto;
         font-size: 25px;
         place-items: center;
@@ -506,10 +531,24 @@ footer{
         min-height: 250vh;
         margin: auto auto;
         font-size: 25px;
+        gap: 20em;
+    }
+
+    .flip {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    .back-card {
+        width: 960px;
+        height: 754px;
+    }
+
+    .pong {
+        width: 960px;
+        height: 754px;
     }
 
     #nav_certificados{

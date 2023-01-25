@@ -10,8 +10,9 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 
-const hiddenElements = document.querySelectorAll('.hidden, .ap, .top-b');
+const hiddenElements = document.querySelectorAll('.hidden, .ap, .hidden-conhecimentos');
 hiddenElements.forEach((el) => observer.observe(el));
+
 
 //menu lateral
 
