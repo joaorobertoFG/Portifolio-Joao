@@ -443,6 +443,11 @@ footer{
 }
 
 @media screen and (max-width: 480px) {
+    html{
+        scroll-behavior: smooth;
+        scroll-snap-type: none;
+    }
+
     main {
         padding-left: 2em;
     }
