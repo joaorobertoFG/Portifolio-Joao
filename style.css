@@ -444,16 +444,23 @@ footer{
     .apresentação {
         padding-top: 250px;
         padding-bottom: 100px;
+        align-items: center;
+        justify-content: center;
     }
 
     .dados p {
         font-size: 40px;
     }
 
-    #botao-linkedin {
-        width: 280px;
-        height: 80px;
-        font-size: 40px;
+    #botao-social {
+        width: 310px;
+        height: 120px;
+        font-size: 45px;
+    }
+
+    #botao-social:active {
+        transform: scale(-0.5);
+
     }
 
     .social-icons {
