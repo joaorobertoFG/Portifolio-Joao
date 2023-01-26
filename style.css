@@ -193,7 +193,7 @@ p {
     gap: 25px;
 }
 
-#botao-linkedin {
+#botao-social {
     align-items: center;
     background: none;
     border: 2px solid transparent;
@@ -208,12 +208,12 @@ p {
     justify-content: center;
     padding: 0.5rem 0.8rem;
     text-decoration: none;
-    width: 200px;
+    width: 170px;
     height: 35px;
     transition: all 500ms;
 }
 
-#botao-linkedin:hover {
+#botao-social:hover {
     transform: scale(1.1);
     border-image: linear-gradient(200deg, red, blueviolet, purple);
     border-image-slice: 1;
@@ -222,36 +222,6 @@ p {
 
 .social-icons {
     width: 21px;
-}
-
-#botao-github {
-    align-items: center;
-    background: none;
-    border: 2px solid transparent;
-    border-image: linear-gradient(100deg, red, blueviolet, purple);
-    border-image-slice: 1;
-    color: #5c6bc0;
-    cursor: pointer;
-    display: flex;
-    font-size: 1rem;
-    font-weight: 600;
-    gap: 1rem;
-    justify-content: center;
-    padding: 0.5rem 0.8rem;
-    text-decoration: none;
-    transition: 400ms;
-    width: 200px;
-    height: 35px;
-    transition: 500ms;
-}
-
-#botao-github:hover {
-    transform: scale(1.1);
-    transform: scale(1.1);
-    border-image: linear-gradient(200deg, red, blueviolet, purple);
-    border-image-slice: 1;
-    transition: 500ms;
-    box-shadow: 0 15px 25px rgb(0, 0, 0);
 }
 
 .icons{
