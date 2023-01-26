@@ -255,7 +255,7 @@ p {
 }
 
 .dados p:nth-child(3)::before {
-    content: url("icone-gps.png");
+    content: url('icone-gps.png');
 }
 
 /* Conhecimentos */
@@ -363,7 +363,7 @@ p {
 }
 
 /* Certificados */
-#nav_certificados{
+#Certificados{
     scroll-snap-align: start;
     font-size: 25px;
     min-height: 50vh;
@@ -389,6 +389,13 @@ p {
     transform: scale(1.2);
     transition: 400ms;
 
+}
+
+.certificados {
+    margin-top: 3em;
+    opacity: 0;
+    transition: all 1s;
+    transform: translateY(-50%);
 }
 
 /* Rodapé */

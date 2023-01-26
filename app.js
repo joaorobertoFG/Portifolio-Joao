@@ -10,7 +10,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 
-const hiddenElements = document.querySelectorAll('.hidden, .ap, .hidden-conhecimentos');
+const hiddenElements = document.querySelectorAll('.hidden, .ap, .hidden-conhecimentos, .certificados');
 hiddenElements.forEach((el) => observer.observe(el));
 
 
