@@ -5,7 +5,7 @@
 
 body{
     background-color: #101011;
-    font-family: 'Montserrat', 'icones', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 html{
@@ -285,14 +285,6 @@ p {
     transition: all 2s;
     transform: translateX(-50%);
     display: flex;
-    margin-top: 4em;
-    margin-bottom: 5em;
-}
-
-@media(prefers-reduced-motion) {
-    .hidden {
-        transition: none;
-    }
 }
 
 .show{
@@ -327,39 +319,137 @@ p {
     justify-content: center;
 }
 
-.card{
-    margin: 5px;
-    height: 377px;
-    width: 480px;
-    perspective: 8000px;
+/* linkway */
+.card {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 240px 140px 70px 70px;
+    grid-template-areas: "image" "text" "play" "tecs";
+    border-radius: 15px;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    color: #101011;
+    text-align: center;
 }
 
-.pong {
-    height: 377px;
-    width: 480px;
+.card-image {
+    grid-area: image;
+}
+.card-text {
+    grid-area: text;
+}
+.play-source {
+    grid-area: tecs; 
+}
+.tec {
+    grid-area: play;
 }
 
-.card .flip{
-    transition: 0.5s;
-    transform-style: preserve-3d;
+.card-image {
+    grid-area: image;
+    background: url(linkway.png);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
 }
 
-.card:hover .flip{
-    transform: rotateY(180deg);
+.card-text {
+    grid-area: text;
+    margin: 25px;
 }
 
-.front-card, .back-card{
-    position: absolute;
-    backface-visibility: hidden;
+.card-text p {  
+    color: rgb(0, 0, 0);
+    font-size:18px;
+    font-weight: bold;
 }
 
-.back-card{
-    transform: rotateY(180deg);
+.card-text h3 {
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom:13px;
+    font-size:28px;
 }
 
-.front-card img, .back-card img{
-    border-radius: 10px;
-    box-shadow: 0 0 8px 0 black;
+.card:hover {
+    transform: scale(1.10);
+}
+
+.card:hover .card-image {
+    background-image: url(linkway.gif);
+    
+}
+
+.card:hover .tec img{
+    opacity: 1;
+}
+
+.card {
+    transition: all 0.5s ease;
+    margin:30px;
+}
+
+.play-source {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 3.5rem;
+    margin-right: 1.4em;
+    margin-left: 1.4em;
+    margin-top: 0.5em;
+    transition: all 0.5s ease;
+    scale: 1.2;
+}
+
+.play-img {
+    width: 40px;
+}
+
+.play-source img {
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.play-source img:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+
+.tec {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 3.5rem;
+    margin: 1em;
+    transition: all 0.5s ease;
+}
+
+.tec img {
+    opacity: 0;
+    scale: 1.8;
+    transition: all 0.5s ease;
+}
+
+.tec img:hover {
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+}
+
+/* pong */
+
+#card-pong {
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+}
+
+.card-image-pong {
+    grid-area: image;
+    background: url(pong.png);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size:contain;
+}
+
+.card:hover .card-image-pong {
+    background: url(pong.gif);
+    background-size:cover;
 }
 
 /* Certificados */
@@ -507,7 +597,7 @@ footer{
 
     .conhecimentos {
         width: 1000px;
-        min-height: 250vh;
+        min-height: 350vh;
         margin: auto auto;
         font-size: 25px;
         place-items: center;
@@ -517,33 +607,24 @@ footer{
 
     .projetos {
         width: 1000px;
-        min-height: 250vh;
+        min-height: 350vh;
         margin: auto auto;
         font-size: 25px;
         gap: 20em;
     }
 
-    .flip {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    .card {
+        scale: 2.5;
     }
 
-    .back-card {
-        width: 960px;
-        height: 754px;
+    .hidden {
+        gap: 33em;
     }
 
-    .pong {
-        width: 960px;
-        height: 754px;
-    }
-
-    #nav_certificados{
+    #Certificados{
         width: 1000px;
         font-size: 25px;
-        min-height: 200vh;
+        min-height: 350vh;
         width: 1000px;
         margin: auto auto;
         padding-top: 2em;
