@@ -323,8 +323,8 @@ p {
 .card {
     display: grid;
     grid-template-columns: 300px;
-    grid-template-rows: 240px 140px 70px 70px;
-    grid-template-areas: "image" "text" "play" "tecs";
+    grid-template-rows: 240px 140px 70px;
+    grid-template-areas: "image" "text" "play";
     border-radius: 15px;
     background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     color: #101011;
@@ -338,7 +338,7 @@ p {
     grid-area: text;
 }
 .play-source {
-    grid-area: tecs; 
+    grid-area: play; 
 }
 .tec {
     grid-area: play;
@@ -417,19 +417,19 @@ p {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    gap: 3.5rem;
+    gap: 1.5rem;
     margin: 1em;
     transition: all 0.5s ease;
 }
 
 .tec img {
     opacity: 0;
-    scale: 1.8;
+    scale: 1.5;
     transition: all 0.5s ease;
 }
 
 .tec img:hover {
-    transform: scale(1.2);
+    transform: scale(2);
     transition: all 0.5s ease;
 }
 
@@ -452,6 +452,19 @@ p {
     background-size:cover;
 }
 
+/* Card 3 */
+
+#card-3 {
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+.card-image-card3 {
+    grid-area: image;
+    background: url(monkey-working.gif);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size:cover;
+}
 /* Certificados */
 #Certificados{
     scroll-snap-align: start;
