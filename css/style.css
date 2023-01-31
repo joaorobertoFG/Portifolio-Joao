@@ -8,6 +8,15 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* ::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+} */
+
+
 html{
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
@@ -319,18 +328,6 @@ p {
     justify-content: center;
 }
 
-/* linkway */
-.card {
-    display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 240px 140px 70px;
-    grid-template-areas: "image" "text" "play";
-    border-radius: 15px;
-    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-    color: #101011;
-    text-align: center;
-}
-
 .card-image {
     grid-area: image;
 }
@@ -344,12 +341,28 @@ p {
     grid-area: play;
 }
 
+/* linkway */
+.card {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 200px 160px 70px;
+    grid-template-areas: "image" "text" "play";
+    border-radius: 15px;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    color: #101011;
+    text-align: center;
+}
+
 .card-image {
     grid-area: image;
     background: url(linkway.png);
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     background-size: cover;
+}
+
+#linkway p {
+    margin-top: 1.3em;
 }
 
 .card-text {
@@ -365,7 +378,8 @@ p {
 
 .card-text h3 {
     font-family: 'Orbitron', sans-serif;
-    margin-bottom:13px;
+    margin-bottom:5px;
+    
     font-size:28px;
 }
 
@@ -442,29 +456,73 @@ p {
 .card-image-pong {
     grid-area: image;
     background: url(pong.png);
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    background-size:contain;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .card:hover .card-image-pong {
     background: url(pong.gif);
     background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-/* Card 3 */
+#card-pong p{
+    margin-top: 2em;
+}
 
-#card-3 {
+/* Bau */
+
+#card-bau {
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+
+.card-image-bau {
+    justify-self: center;
+    grid-area: image;
+    background: url(closed.png);
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 200ms;
+}
+
+.card:hover .card-image-bau {
+    transition: 300ms;
+    background: url(open.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#card-bau h3 {
+    font-size: 20px;
+}
+
+#card-bau p {
+    font-size: 18px;
+}
+
+/* Card 4 */
+
+#card-4 {
     background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
 }
 
-.card-image-card3 {
+.card-image-4 {
     grid-area: image;
     background: url(monkey-working.gif);
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     background-size:cover;
 }
+
 /* Certificados */
 #Certificados{
     scroll-snap-align: start;
