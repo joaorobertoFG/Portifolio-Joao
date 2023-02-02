@@ -11,3 +11,7 @@ Rápida descrição do objetivo de fazer esse projeto
 ## Detalhes do projeto
 
 Meu portifólio pessoal, contendo minhas informações e projetos.
+
+#Créditos
+
+| https://www.flaticon.com/br/ por todos os ícones do site.
