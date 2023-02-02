@@ -14,6 +14,5 @@ Meu portifólio pessoal, contendo minhas informações e projetos.
 
 ## Créditos
 
-| https://www.flaticon.com/br/ e
-:https://fontawesome.com por todos os ícones do site.
+| https://www.flaticon.com/br/ e https://fontawesome.com por todos os ícones do site.
 
