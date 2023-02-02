@@ -9,13 +9,8 @@ body{
 }
 
 ::-webkit-scrollbar {
-    width: 12px;
+    display: none;
 }
-
-/* ::-webkit-scrollbar-thumb {
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-} */
-
 
 html{
     scroll-behavior: smooth;
@@ -109,10 +104,11 @@ nav li {
     }
 
     .menu-lateral {
+        gap: 1em;
         display: flex;
         flex-direction: column;
         background-color: #111314;
-        width: 170vw;
+        width: 80%;
         height: 100%;
         position: fixed;
         transition: 400ms;
@@ -206,7 +202,7 @@ p {
     align-items: center;
     background: none;
     border: 2px solid transparent;
-    border-image: linear-gradient(100deg, red, blueviolet, purple);
+    border-color: purple;
     border-image-slice: 1;
     color: #0077b7;
     cursor: pointer;
@@ -220,11 +216,12 @@ p {
     width: 170px;
     height: 35px;
     transition: all 500ms;
+    border-radius: 7px;
 }
 
 #botao-social:hover {
     transform: scale(1.1);
-    border-image: linear-gradient(200deg, red, blueviolet, purple);
+    border-color: blueviolet;
     border-image-slice: 1;
     box-shadow: 0 15px 25px rgb(0, 0, 0);
 }
@@ -232,26 +229,6 @@ p {
 .social-icons {
     width: 21px;
 }
-
-.icons{
-    width: 4%;
-    border-radius: 50%;
-    margin:0px 20px 60px 0px ;
-    transition: 400ms;
-}
-
-.icons:hover{
-    transform: scale(1.2);
-    transition: 400ms
-}
-
-.icons:nth-child(3) {
-    display: none;
-}
-
-.icons:hover:after{
-    transition: 400ms;
-}    
 
 .dados p, a{
     text-decoration: none;
@@ -261,10 +238,6 @@ p {
 
 .dados p:hover{
     color: white;
-}
-
-.dados p:nth-child(3)::before {
-    content: url('icone-gps.png');
 }
 
 /* Conhecimentos */
@@ -290,10 +263,13 @@ p {
 }
 
 .hidden{
+    align-items: center;
+    justify-content: center;
     opacity: 0;
     transition: all 2s;
     transform: translateX(-50%);
     display: flex;
+
 }
 
 .show{
@@ -355,7 +331,7 @@ p {
 
 .card-image {
     grid-area: image;
-    background: url(linkway.png);
+    background: url(src/linkway.png);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-size: cover;
@@ -388,7 +364,7 @@ p {
 }
 
 .card:hover .card-image {
-    background-image: url(linkway.gif);
+    background-image: url(src/linkway.gif);
     
 }
 
@@ -455,7 +431,7 @@ p {
 
 .card-image-pong {
     grid-area: image;
-    background: url(pong.png);
+    background: url(src/pong.png);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-size:cover;
@@ -464,7 +440,7 @@ p {
 }
 
 .card:hover .card-image-pong {
-    background: url(pong.gif);
+    background: url(src/pong.gif);
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -483,7 +459,7 @@ p {
 .card-image-bau {
     justify-self: center;
     grid-area: image;
-    background: url(closed.png);
+    background: url(src/closed.png);
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -495,7 +471,7 @@ p {
 
 .card:hover .card-image-bau {
     transition: 300ms;
-    background: url(open.png);
+    background: url(src/open.png);
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -517,7 +493,7 @@ p {
 
 .card-image-4 {
     grid-area: image;
-    background: url(monkey-working.gif);
+    background: url(src/monkey-working.gif);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-size:cover;
@@ -527,7 +503,7 @@ p {
 #Certificados{
     scroll-snap-align: start;
     font-size: 25px;
-    min-height: 50vh;
+    min-height: 70vh;
     width: 1000px;
     margin: auto auto;
     padding-top: 2em;
@@ -547,7 +523,7 @@ p {
 }
 
 .vitrine:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 400ms;
 
 }
@@ -668,7 +644,7 @@ footer{
 
     .conhecimentos {
         width: 1000px;
-        min-height: 350vh;
+        min-height: 250vh;
         margin: auto auto;
         font-size: 25px;
         place-items: center;
