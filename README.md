@@ -12,7 +12,8 @@ Rápida descrição do objetivo de fazer esse projeto
 
 Meu portifólio pessoal, contendo minhas informações e projetos.
 
-# Créditos
+## Créditos
 
-| https://www.flaticon.com/br/ e https://fontawesome.com por todos os ícones do site.
+| https://www.flaticon.com/br/ e
+:https://fontawesome.com por todos os ícones do site.
 
