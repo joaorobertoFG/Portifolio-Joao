@@ -1,4 +1,5 @@
 //fade-in
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)
@@ -25,7 +26,8 @@ botaoMenu.addEventListener('click', () => {
     menu.classList.toggle('menu-lateral-ativo')
 })
 
-//esconder menu lateral
+//Esconder menu lateral
+
 const listaMenu = document.querySelectorAll('.menu-link');
 
 listaMenu[0].addEventListener('click', () => {
@@ -44,7 +46,7 @@ listaMenu[3].addEventListener('click', () => {
     menu.classList.toggle('menu-lateral-ativo')
 })
 
-// Swiper
+//Swiper
 
 const swiper = new Swiper('.swiper', {
     speed: 400,

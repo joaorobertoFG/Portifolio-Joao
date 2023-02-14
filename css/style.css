@@ -18,6 +18,14 @@ html{
 }
 
 /* Nav bar */
+header {
+    width: 1000px;
+}
+
+#menu {
+    margin-right: 4em;
+}
+
 li {
     color: white;
     font-weight: bold;
@@ -43,9 +51,10 @@ li:hover::before, li.active::before{
 }
 
 nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
-    top: 0;
-    right: 0;
     width: 100%;
     text-align: center;
     padding: 30px;
@@ -70,7 +79,8 @@ nav li {
     font-size: 25px;
     list-style: none;
     display: inline-flex;
-    margin: 0 0 0 120px;
+    justify-content: center;
+    margin: 0 60px;
 }
 
 .menu-lateral, .img-lateral, .cabecalho, .menu-link {
@@ -216,7 +226,7 @@ p {
     width: 170px;
     height: 35px;
     transition: all 500ms;
-    border-radius: 7px;
+    border-radius: 20px;
 }
 
 #botao-social:hover {
@@ -756,7 +766,7 @@ footer{
         flex-direction: row;
         transition: all 0.5s ease;
         scale: 1.5;
-        padding: 0 8em 1em 8em;
+        padding: 0 8em 2em 8em;
     }
     
     .play-img {
