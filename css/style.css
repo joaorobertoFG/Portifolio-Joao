@@ -139,6 +139,12 @@ nav li {
         align-items: center;
     }
 
+    .by-joao {
+        font-size: 50px;
+        margin-top: 15em;
+        place-self: center;
+    }
+
 }
 
 /* Apresentação */
